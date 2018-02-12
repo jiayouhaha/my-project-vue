@@ -3,6 +3,6 @@
  */
 ;(function(){
     window.urlObj = {
-        api: 'http://r.cn'
+        api: 'https://restaurant.yijiahotel.shop'
     };
 })();
