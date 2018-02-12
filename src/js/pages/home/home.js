@@ -1,7 +1,7 @@
 /**
  * Created by jimmy on 18/2/8.
  */
-import {Base} from './../../common/base.js'
+import {Base} from './../../common/base.js'  // 相对js
 
 class Home extends Base{
     constructor(){
