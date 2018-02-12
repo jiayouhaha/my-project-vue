@@ -1,0 +1,31 @@
+* {
+    font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;
+    -webkit-overflow-scrolling: touch;
+}
+input{
+    outline: none;
+}
+input[type=text], input[type=tel]{
+    -webkit-appearance: none;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body,ul {
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}

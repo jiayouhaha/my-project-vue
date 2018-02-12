@@ -1,0 +1,45 @@
+@mixin size($w:100%,$h:100%)
+  width: $w
+  height: $h
+
+@mixin r($r:.03rem)
+  border-radius: $r
+  background-clip: padding-box
+
+@mixin txt-ellipsis-p($num:1)
+  text-overflow: ellipsis
+  overflow: hidden
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: $num
+
+@mixin fixed-full-size()
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+
+#global-tips
+  @include fixed-full-size()
+  z-index: 10001
+  display: none
+  align-items: center
+  justify-content: center
+  &.show
+    animation: showGlobalTips 3s
+
+    @keyframes showGlobalTips
+      0%
+        display: flex
+      99.99%
+        display: flex
+      100%
+        display: none
+  label
+    @include r(.03rem)
+    background-color: RGBA(0, 0, 0,0.8)
+    color: #fff
+    font-size: .12rem
+    padding: .12rem .25rem
+

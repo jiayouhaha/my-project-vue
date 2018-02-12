@@ -1,0 +1,114 @@
+@import "common"
+$gray-color: #8a8a8a
+$dark-color: #333
+.station-item
+  &:first-child
+    .station-detail
+      border-top: none
+
+  &:last-child
+    margin-bottom: 0
+
+  &:active
+    background-color: #f3f1f1
+
+.station-detail
+  border-top: 1px solid #e3e3e3
+  display: flex
+  @include size(100%,auto)
+  padding-right: .15rem
+  align-items: center
+  box-sizing: border-box
+  background-color: #fff
+  .left-box
+    flex: 1
+    font-size: .13rem
+    padding: .12rem .15rem
+    .name-box
+      .f
+      align-content: center
+      .station-name
+        color: $dark-color
+        margin-bottom: .05rem
+        @include txt-ellipsis-p(1)
+        font-size: .16rem
+
+    .station-address
+      color: $gray-color
+      @include txt-ellipsis-p(2)
+
+    .discount-str
+      margin-top: .04rem
+      font-size: .12rem
+      color: $dark-color
+
+
+  .right-box
+    flex-basis: .60rem
+    font-size: .12rem
+    margin-left: .8rem
+    justify-content: flex-end
+    a
+      text-decoration: none
+
+    .distance
+      color: $gray-color
+      margin-bottom: .05rem
+      text-align: center
+
+    .navigation
+      color: #eb4452
+      text-align: center
+
+
+  &:active
+    background-color: darken(#fff, 10%)
+
+
+.station-section
+  background-color: #ffffff
+  font-size: .12rem
+  color: #8a8a8a
+  $h: .30rem
+  height: $h
+  line-height: $h
+  text-align: center
+  display: flex
+  padding: .08rem .15rem
+  border-top: 1px solid #e3e3e3
+  &.first
+    margin-bottom: .10rem
+    border-bottom: 1px solid #e3e3e3
+
+  .section-item
+    flex: 1
+    &.left
+      border-right: 1px solid #e3e3e3
+      display: flex
+      align-items: center
+      justify-content: center
+      .pay-img
+        display: block
+        height: .25rem
+        width: .25rem
+        background-image: url(./../assets/images/common/pay.png)
+        background-size: .25rem .25rem
+        margin-right: .03rem
+
+    .icon-daohang
+      font-size: .19rem
+      color: #eb4452
+      vertical-align: -.04rem
+
+    &.right
+      a
+        display: inline-block
+        color: #8a8a8a
+        @include size(100%,100%)
+
+
+    &:active
+      background-color: darken(#fff, 10%)
+    
+  
+

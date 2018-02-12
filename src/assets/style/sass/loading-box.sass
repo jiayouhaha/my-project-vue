@@ -1,0 +1,34 @@
+/*加载提示*/
+.loading-modal
+  position: fixed
+  width: .80rem
+  height: .80rem
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  border-radius: .04rem
+  background-color: #7b7b7b
+  text-align: center
+  font-size: .12rem
+  color: #fff
+  z-index: 8000
+  display: none
+  &.active
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .loading-circle
+      display: inline-block
+      background-image: url(./../assets/images/common/loading.svg)
+      background-size: .25rem .25rem
+      height: .25rem
+      width: .25rem
+      z-index: 1
+      animation: aloading 0.8s steps(6, end) 0s infinite
+      margin-bottom: 0.15rem
+
+@keyframes aloading
+  to
+    transform: rotate(360deg)
+
